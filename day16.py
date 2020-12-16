@@ -70,7 +70,6 @@ values_by_field = [set(all_tickets[j][i] for j in range(len(all_tickets))) for i
 # we get all the possible column indices for each field
 candidates = {key: list() for key in fields}
 for fieldname in candidates:
-    print(fieldname)
     for i, this_set in enumerate(values_by_field):
         if all(v in fields[fieldname] for v in this_set):
             candidates[fieldname].append(i)
