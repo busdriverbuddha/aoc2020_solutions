@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[25]:
-
-
 card, door = map(int, open("input").readlines())
 
 v = 1
@@ -25,10 +19,4 @@ for _ in range(loopsize):
     v %= 20201227
 
 print(v)
-
-
-# In[ ]:
-
-
-
 
